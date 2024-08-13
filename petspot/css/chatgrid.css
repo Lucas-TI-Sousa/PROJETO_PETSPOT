@@ -1,0 +1,317 @@
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100px 1fr 70px;
+    grid-template-areas: 
+    "header header"
+    "online sala"
+    "logo msg";
+    overflow: hidden;
+
+    
+}
+
+.div-chat-header{
+    color: wheat;
+    grid-area: header;
+    background-color: var(--CorHeader);
+}
+/* Bloco dos usuarios onlines */
+.div-chat-online{
+    color: wheat;
+    grid-area: online;
+    overflow: auto;
+    min-width: 320px;
+    
+}
+.div-card-menu{
+  
+   width: 100%;
+   height: 40px;
+}
+
+.div-card-menu h1{
+    background-color: var(--CorHeader);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.div-card{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.div-card h2,h3{
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    
+}
+
+.div-card button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: var(--CorHeader);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.div-card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Fim do bloco */
+
+/* ESSE BLOCO É DO CAMPO DE ESCREVER E ENVIAR MSG */
+.div-envio-msg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 210px;
+    border-top: 1px solid gray;
+}
+
+.envia-msg{
+    width: 100%;
+    
+}
+.div-envio-msg textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+.msg-ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+
+.msg-ico img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-envia-msg img{
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.btn-envia-msg{
+    /* display: flex;
+    justify-content: flex-end;
+    margin-right: 15px; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    
+    
+}
+
+.btn-envia-msg button{
+    padding: 14px 20px;
+    border: none;
+    background-color: var(--CorHeader);
+    border-radius: 15px;
+    color: white;
+    font-size: clamp(1.5em,10vw,0.8em);
+    cursor: pointer;
+}
+
+.div-envio-msg{
+    grid-area: msg;
+    background-color: white;
+}
+
+/* FIM DO BLOCO */
+/* ======================================================= */
+/* ESSE BLOCO CRIA AS MSG DA SALA DE BATEPAPO */
+.div-chat-sala{
+    color: black;
+    grid-area: sala;
+    background-color: white;
+    position: relative;
+    padding: 30px;
+    overflow: auto;
+
+} 
+
+.div-msg-recebida{
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+.div-msg-recebida img{
+    width: 150px;
+}
+
+.div-msg-enviada{
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: burlywood;
+}
+
+.div-panel-emoji{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 340px;
+    height: 300px;
+    overflow: auto;
+    padding: 30px;
+    padding-top: 50px;
+    gap: 20px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+   
+}
+.div-panel-emoji img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#close-emoji{
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--CorHeader);
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
+    
+    
+}
+
+.div-msg-enviada img{
+    width: 150px;
+}
+
+dialog{
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+
+dialog::backdrop{
+    /* background-color:rgba(50, 47, 47, 0.293); */
+    border: none;
+    background-color: transparent;
+}
+
+
+
+/* FIM DO BLOCO */
+/* ========================================================= */
+
+
+
+.div-chat-logo{
+    color: white;
+    grid-area: logo;
+    background-color: var(--CorHeader);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontBaloo);
+    font-size: clamp(1.2em, 100%, 3em )
+    
+}
+
+footer{
+    color: wheat;
+    grid-area: footer;
+    background-color: chocolate;
+}
+
+/* Medias query */
+
+@media screen and (max-width:768px) {
+
+    main{
+        grid-template-areas: 
+        "header header"
+        "sala sala"
+        "msg msg";  
+    }
+    .div-chat-online{
+        display: none;
+        
+    }
+    .div-chat-logo{
+        display: none;
+    }
+
+    .div-envio-msg{
+      
+        grid-template-columns: 4fr 1fr;
+       
+       
+    }
+    .btn-envia-msg{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     
+   
+    }
+
+    .btn-envia-msg img{
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        
+    }
+
+    .btn-envia-msg button{
+        padding: 15px 15px;
+        border: none;
+        background-color: var(--CorHeader);
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-right: 8px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        
+    }
+
+   
+    
+}
