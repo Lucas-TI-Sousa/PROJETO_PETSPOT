@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
     <!-- ---- -->
     <!-- MENU -->
@@ -18,38 +19,87 @@
             <nav>
                 <a href="#" id="m1">Contato</a>
                 <a href="#" id="m2">Sobre nós</a>
-                <a href="#" id="logo">  <img id="btn-menu" src="imagens/icones/menu_50px.png" alt=""></a>
+                <a href="#" id="logo"><img id="btn-menu" src="imagens/icones/menu_50px.png" alt=""></a>
                 <a href="#" id="m3">Adoção</a>
                 <a href="#" id="m4">Doação</a>
             </nav>
         </div>
     </header>
-    <!-- -----  -->
-    <!-- B/Pesquisa -->
-    <section>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p></p>
+
+    <div class="menu">
+        <div class="menu-text">
+        <img src="coelho-preto.jpg" alt="Foto de perfil" class="profile-pic">
+            <h2>Usuário</h2>
+            <P>Online</P>
+        </div>
+            <select name="nomes" id="nomes">
+                <option value="Santo Amaro">Santo Amaro</option>
+                <option value="Osasco">Osasco</option>
+                <option value="Itapecirica da Serra">Itapecirica da Serra</option>
+                <option value="Capão Redondo">Capão Redondo</option>
+                <option value="Morumbi">Morumbi</option>
+                <option value="Santana">Santana</option>
+            </select>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="search-button">
+                    <img src="lupa.png" alt="Pesquisar">
+                </button>
             </div>
-            <div>
-                <!-- <input type=""> -->
-                <label for=""></label>
+    </div>
+
+
+    <!-- main imagem -->
+    <main>
+
+        <div class="image-container">
+            <img src="coelho-preto.jpg" alt="Imagem de Exemplo" class="image">
+            <div class="rectangle">
+                <h2>Baby, Vira-lata</h2>
+                <p>Brasil<br>Entre 6 a 8 anos,(cachorro)<br>2km de distância.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- container_mensagem -->
+
+    <section>
+        <div class="container_mensagem">
+            <div class="cont_mensagem">
+                <img src="coelho-preto.jpg" alt="Imagem de Exemplo" class="img">
+                <div class="texto">
+                    <h2>LUCAS SOUSA</h2>
+                    <p>Oline</p>
+                </div>
+            </div>
+            <div class="mensagem">
+                <p>Esta é a mensagem que aparece abaixo do container.</p>
             </div>
         </div>
     </section>
 
+    <div class="container_iconis">
+        <div class="cont_iconis">
+            <div class="iconis_1">
+                <img src="coelho-preto.jpg" alt="" class="img_1">
+            </div>
+            <button class="button_adotar">
+                <p>ADOTAR</p>
+            </button>
+            <div class="iconis_2">
+                <img src="coelho-preto.jpg" alt="" class="img_2">
+            </div>
+        </div>
+    </div>
 
-    <section>
-
-    </section>
 
 
 
-     <!-- ------------- -->
-    <!-- FOOTER PADRÃO -->    
+    <!-- ------------- -->
+    <!-- FOOTER PADRÃO -->
     <footer>
-        
+
         <section class="container-footer">
             <div class="texto-footer">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -66,6 +116,7 @@
         </section>
     </footer>
 
-    
+
 </body>
+
 </html>

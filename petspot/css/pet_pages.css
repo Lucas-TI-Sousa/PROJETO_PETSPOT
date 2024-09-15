@@ -1,36 +1,301 @@
-header{
-    width: 100%;
-    height: auto;
-    background-color: var(--CorHeader);
-}
-
-header .contaner{  
-   display: flex;
-   align-items: center;      
-}
-
-body{
+body {
     display: flex;
     flex-direction: column;    
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;   
+header {
     width: 100%;
-    line-height: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--CorHeader); 
 }
 
-nav a{
-    color: white;
+.contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--CorFooter);
+    width: 100%;
+    height: 100px;
+    font-family: var(--fontInter);
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100vw;
+}
+
+nav a { 
+    color: #686868;
     font-size: 2em;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+nav #m1, #m2, #m3, #m4{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+
+#logo {
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#logo img {
+    align-items: center;
+    text-align: center;
+  
+   
+}
+
+/*Menu pequisa*/
+
+.menu {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    height: 87px;
+    width: 100%;
+    background-color: #686868; 
+
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu-text {
+   display: flex;
+   width: 100%;
+   height: 87px;
+   align-items: center;
+   background-color: #686868;
+   color: #FFFFFF;
+}
+.menu-text p {
+    position: absolute;
+    left: 110px;
+    top: 55px;
+
+}
+.search-container {
+    display: flex;
+    width: 500px;
+    height: 53px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+
+}
+
+select {
+    width: 600px;
+    height: 53px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    flex: 1;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-button:hover {
+    background-color: #ddd;
+}
+
+/* main mensagen */
+main {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  
+}
+
+.image-container {
+  position: relative;
+  display: block; 
+  width: 100%;
+  height: 500px; /* Mantém a proporção da imagem */
+ 
+  
+}
+
+.image-container .image {
+  width: 45%;
+  margin-left: 9%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-container .rectangle {
+  position: absolute;
+  top: 37%; /* Coloca o retângulo 70% da altura da imagem */
+  left: 60%;
+  transform: translate(-30%, -30%); /* Centraliza horizontalmente */
+  width: 44%; 
+  height: 65%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+}
+.image-container h2 {
+  margin: 0;
+  font-size: 40px; 
+  color: #000000;
+}
+
+.image-container p {
+  margin: 5px 0 0;
+  font-size: 30px; 
+  line-height: 1.4;
+  color: #000000;
+}
+
+/* container_mensagem  */
+
+section {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.container_mensagem {
+    width: 80%;
+    height: 324px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 30px;
     
 }
-nav h2{
-    font-family: var(--fontBaloo);
-    font-size: 2em;
+.cont_mensagem{
+    display: flex;
+    padding: 5px;
 }
 
+/* Estilo da imagem */
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* Estilo do texto ao lado da imagem */
+.container_mensagem .texto{
+    text-align: center; 
+    width: 250px;
+    margin-top: 10px;
+    height: 100px;
+    padding: 20px;
+    font-size: 25px;
+    
+}
+.texto h2{
+    font-size: 25px;
+}
+.texto p {
+    margin-top: 10px;
+    font-size: 20px;
+
+} 
+/* Estilo da mensagem embaixo do container */
+.mensagem {
+    padding: 10px;
+    font-size: 18px;
+    color: #555;
+}
+.mensagem p{
+    font-size: 25px;
+}
+
+
+/*container_icones*/
+
+.container_iconis {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 10px;
+  
+}
+.cont_iconis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.container_iconis .iconis_1, .iconis_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #686868;
+    border-radius: 30px;
+    margin: 15px;  
+}
+
+.img_1, .img_2{
+    width: 70px;
+    height: 70px;
+}
+
+.button_adotar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    margin: 10px; 
+    font-size: 40px;
+    background-color: #686868; 
+    color: #FFFFFF;
+}
 /* ------ */
 /* FOOTER */
 
@@ -71,45 +336,201 @@ nav h2{
     margin: 10px;
 }
 
+@media (max-width: 880px) {
 
-@media screen and (max-width : 801px){
+    main{
+        display: flex;
+        width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+      .image-container .image{
+        width: 108%; /* A largura ocupa a tela inteira em smartphones */
+        height: 600px;
+        margin-left: 0%; 
+      }
+      .image-container .rectangle {
+        width: 108%; /* Largura total em smartphones */
+        height: 250px;
+        padding: 20px; /* Padding menor para telas pequenas */
+        top: 68%; /* Coloca o retângulo 68% da altura da imagem */
+        left: 28.2%;
+      }
     
-    /* ----- */
-    /* FOOTER */
-    .texto-footer {
+      .image-container h2 {
+        font-size: 45px; 
+      }
+    
+      .image-container p {
+        font-size: 35px; 
+      }
+      section .container_mensagem{ 
+        width: 100%;
+      }
+      .texto h2{
+        font-size: 25px;
+    }
+    .texto p{
+        font-size: 15px;
+    
+    }
+    .container_mensagem .mensagem p{
+        font-size: 25px;
+    }
+
+     /* FOOTER */
+     .texto-footer {
         font-size: 0.8em;
     }
 
 
     /* Cookies */
-    .div-cookie{
+    .div-cookie {
         flex-direction: column;
         height: auto;
     }
 
 }
+    
 
-@media screen and (max-width : 475px){
-
-     /* FOOTER */
-     .texto-footer {
-        font-size: 0.5em;
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    .menu{
+      display: block; 
+      height: 100%;
+      background-color: none;
     }
 
-    .redes-footer a {
-        width: 15px;
-        height: 15px;
-        margin: 20px 5px;
+    select{
+        width: 65%;
+        margin: 10px;
+        margin-top: 10px;
+
+    }
+    .search-container {
+        display: flex;
+        margin-top: 5px; 
+        width: 65%;
     }
 
-    /* Cookies */
-    .div-cookie{
-        flex-direction: column;
-       
-        height: auto;
+    .search-container input[type="text"] {
+        width: 100%;
+        
     }
 
+    .search-container .search-button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Main imagem/Rectangle*/
+    main{
+    display: flex;
+    width: 100%;
+    }
+    .image-container{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+  .image-container .image{
+    width: 115%; 
+    height: 500px;
+    margin-left: 0%; 
+  }
+
+  .image-container .rectangle {
+    width: 115%; 
+    height: 200px;
+    padding: 20px; 
+    top: 70%; 
+    left: 27%;
+  }
+
+  .image-container h2 {
+    font-size: 35px; 
+  }
+
+  .image-container p {
+    font-size: 25px; 
+  }
+  section .container_mensagem{ 
+    width: 100%;
+  }
+  .cont_mensagem{
+    padding: 5px;
 }
 
+/* Estilo da imagem */
+.cont_mensagem .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.container_mensagem .texto {
+    width: 50%;
+    padding: 10px;
+  
+    
+}
+
+.texto h2{
+    font-size: 18px;
+}
+.texto p{
+    font-size: 15px;
+
+}
+.container_iconis .button_adotar{
+    width: 180px;
+    height: 80px;
+    margin: 1px;
+
+}
+.button_adotar p{
+    font-size: 30px;
+}
+.container_iconis .cont_iconis .iconis_1 {
+    width: 80px;
+    height: 80px;
+
+}
+.container_iconis .cont_iconis .iconis_2 {
+    width: 80px;
+    height: 80px;
+}
+.iconis_1 .img_1{
+    width: 50px;
+    height:50px;
+}
+.iconis_2 .img_2{
+    width: 50px;
+    height: 50px;
+}
+
+/* FOOTER */
+.texto-footer {
+    font-size: 0.5em;
+}
+
+.redes-footer a {
+    width: 15px;
+    height: 15px;
+    margin: 20px 5px;
+}
+
+/* Cookies */
+.div-cookie {
+    flex-direction: column;
+
+    height: auto;
+}
+
+}
 
 

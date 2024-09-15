@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #openNav{
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;  
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: -3px;
+  background-color: #010326;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: solid 3px #D9D9D9;
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0) 50%, rgba(14, 235, 10, 1));
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #D9D9D9;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, #main span:hover{
+  color: #0FEC0B;
+  text-decoration: underline;  
+  margin: 0 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  font-size: 36px;
+  margin-right: 50px; 
+}
+
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: margin-right .5s;
+  background-color:#010326;
+  color: #D9D9D9;
+  width: 100%;
+  font-size: 30px;
+}
+
+#main img {
+  min-width: 50%;
+  width: 50%;
+  margin-left: 5%;
+}
+
+#main span{
+  padding: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="menuMobile">
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#quemSomos" onclick="closeNav()">Quem somos</a>
+          <a href="#servicos" onclick="closeNav()">Serviços</a>
+          <a href="#equipamentos" onclick="closeNav()">Equipamentos</a>
+          <a href="#beneficios" onclick="closeNav()">Benefícios</a>
+          <a href="#contato" onclick="closeNav()">Contato</a>
+        </div>
+  
+        <div id="main">
+          <img src="imagens/logo/logo klv.gif" alt=""> 
+          <span id="openNav" onclick="openNav()">&#9776;</span>     
+        </div>
+  
+    </section>
+
+      <script>
+         function openNav(element) {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "#010326";
+    document.getElementById("openNav").style.zIndex = 0;
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+    document.body.style.backgroundColor = "#010326";
+    document.getElementById("openNav").style.zIndex = 2;
+
+
+  }
+      </script>
+  
+</body>
+</html>
