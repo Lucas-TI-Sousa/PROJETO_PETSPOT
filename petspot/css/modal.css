@@ -1,0 +1,192 @@
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    background-color: transparent;
+   }
+
+.container-geral {
+    /* width: 100%; */
+    height: 100%;
+    display: none;
+}
+
+.container-geral {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #F1F1F1;
+}
+
+#canto1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;    
+    z-index: -3;
+}
+
+dialog{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+.div-modal{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+#canto2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    z-index: -3;
+}
+
+.container-interno, .container-interno2 {
+    display: flex;
+    z-index: 1000;
+    width: 80%;
+    height: 70%;
+    /* background-color: #fefefe; */
+    margin: auto;
+    /* padding: 20px; */
+    /* border: 1px solid #888; */
+    width: 80%;
+}
+
+.container-interno2 {
+  display: none;
+}
+
+.aba-login {
+    width: 50%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: #1bd6ba;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    z-index: 1000;
+    border-radius: 10px 0 0 10px;
+}
+
+.aba-cadastro {  
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+}
+
+.entrar-login {
+  /* display: none; */
+    width: 50%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    padding: 30px;
+    /* z-index: 1000; */
+    border-radius: 10px 0 0 10px;
+}
+
+.faca-cadastro {
+  /* display: none; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1000; */
+    background-color: #1bd6ba;
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+    color: white;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+  /* Botão de fechar */
+  .close { 
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .flip-card {
+        background-color: transparent;
+        width: 70%;
+        height: 70%;
+        perspective: 1000px;
+      }
+      
+      .container-interno {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+      }
+      
+      .flip-card:hover .container-interno {
+        transform: rotateY(180deg);
+      }
+      
+      .aba-login, .aba-cadastro {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .aba-login {
+        border-radius: 10px;
+      }
+      
+      .aba-cadastro {
+        border-radius: 10px;
+        transform: rotateY(180deg);
+      }
+}

@@ -5,54 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/loginAnimado.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
-    <!-- MODAL -->
-    <!-- Login Animado -->
-    <section class="container-geral">
-                    
-            <img src="imagens/loginAnimado/Polygon 1 (1).png" alt="" id="canto1">
-            <img src="imagens/loginAnimado/Ellipse 79.png" alt="" id="canto2">
-            
-            <!-- <div class="container-interno">
-                <div class="aba-login">
-                    <h3>Bem-vindo de volta!</h3>
-                    <p>Para continuar conectado conosco, por favor, faça login com suas informações pessoais.</p>
-                    <button id="botao-cadastro">Login</button>
-                    <a href="">Voltar</a>
-                </div>
-
-                <div class="aba-cadastro">
-                    <h3>Crie uma conta</h3>
-
-
-                </div>
-            </div> -->
-        
-    </section>
+       
     
 
-    <!-- JS -->
-    <!-- <script>
-        var btn = document.getElementById("botao-cadastro");
+    <!-- BOTÃO ABRIR MODAL -->
+    <button id="myBtn">Open Modal</button>
 
-        btn.addEventListener('click', function trocaLogin() {
-            var abaLogin = document.getElementsByClassName("aba-login");
-            var abaCadastro = document.getElementsByClassName("aba-cadastro");
-           
-            if(abaCadastro.style.display == 'none'){
-                abaLogin.style.display = 'block';
+    <!-- Modal -->
+    <dialog>
+            <!--  -->
+            <div class="container-geral">
+
+                <!-- Botão fechar -->
+                <span class="close">&times;</span>
+
+                <!-- Detalhes de fundo -->
+                <img src="imagens/loginAnimado/Polygon 1 (1).png" alt="" id="canto1">
+                <img src="imagens/loginAnimado/Ellipse 79.png" alt="" id="canto2">
+                
+                <!-- Container interno -->
+                <div class="flip-card">
+                    <div class="container-interno">
+
+                        <!-- CONTEÚDO LOGIN -->
+                        <div class="aba-login">
+                            <h3>Bem-vindo de volta!</h3>
+                            <p>Para continuar conectado conosco, por favor, faça login com suas informações pessoais.</p>
+                            <button id="botao-cadastro">Login</button>
+                            <a href="">Voltar</a>
+                        </div>
+
+                        
+                        <!-- CONTEÚDO CADASTRO -->
+                        <div class="aba-cadastro">
+                            <h3>Crie uma conta</h3>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div>
+                                <span class="dot"></span>
+                                <a href="">Carregue uma foto</a>
+                            </div>
+                            <form>
+                                <input type="text" name="nome" placeholder="Nome">
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="password" name="password" placeholder="Senha">
+                                <br>
+                                <button>Cadastro</button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="container-interno2">
+                        <!-- ENTRAR LOGIN -->
+                        <div class="entrar-login">
+                            <h3>Entre no PetSpot</h3>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div>
+                                <p>Ou use uma conta de e-mail</p>
+                                <form action="">
+                                    <input type="email" name="email" placeholder="Email">
+                                    <input type="password" name="password" placeholder="Senha">
+                                    <br>
+                                    <button>Esqueceu sua senha?</button>
+                                    <button>Entrar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="faca-cadastro">
+                            <h3>Olá, amigo!</h3>
+                            <p>Insira seus dados pessoais e inicie uma jornada conosco.</p>
+                            <p>Já tem uma conta? | Faça Login</p>
+                            <button id="botao-login">Entrar</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+              </div>
+    </dialog> 
+    
+    
+
+   
+
+   
+    <script>
+        
+    // Buscando o modal
+    // var modal  = document.getElementById("myModal");
+    var VerModal  = document.querySelector('dialog');
+
+
+    // Buscando botão para abrir modal
+    var btn = document.getElementById("myBtn");
+
+    // // Buscando <span> elemento, para fechar o modal (X)
+    var span = document.getElementsByClassName("close")[0];
+
+    // Quando o usuário clicar no botão para abrir o modal 
+    //btn.onclick = function() {
+  //  modal.style.display = "block";
+ //   btn.style.display = "none";
+//alert('teste')
+   // }
+
+   btn.addEventListener('click', () => {
+       VerModal.showModal();
+   })
+
+    // Quando o usuário clicar em <span> (x), para fechar o modal
+    span.onclick = function() {
+        VerModal.style.display = "none";
+    }
+
+    // Quando o usuário clicar em qualquer lugar para fechar o modal 
+            window.onclick = function(event) {
+                if (event.target == VerModal) {
+                    modal.style.display = "none";
+                    btn.style.display = "block";
+                } 
             }
-            else{
-                abaLogin.style.display = 'none';
-            }
-        }) -->
 
-
+    
     </script>
+
+
+
+
+    
 </body>
 
 </html>

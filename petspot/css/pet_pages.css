@@ -4,13 +4,18 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
 header {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     background-color: var(--CorHeader); 
 }
 
@@ -33,10 +38,32 @@ nav {
 }
 
 nav a { 
+=======
+    background-color: var(--CorHeader);
+}
+ 
+header .contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+ 
+nav a {
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
     color: #686868;
     font-size: 2em;
     background-color: #FFFFFF;
     border-radius: 10px;
+<<<<<<< HEAD
 }
 nav #m1, #m2, #m3, #m4{
     text-align: center;
@@ -212,14 +239,175 @@ section {
 .cont_mensagem{
     display: flex;
     padding: 5px;
+=======
 }
+nav #m1, #m2, #m3, #m4{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
+}
+ 
+#logo {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+ 
+#logo img {
+    align-items: center;
+    text-align: center;
+ 
+   
+   
+}
+ 
+/*Menu pequisa*/
+ 
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #686868;
+    height: 87px;
+}
+ 
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+ 
+.menu-text {
+    flex: 1;
+    margin-right: 20px;
+}
+ 
+ 
+ 
+.search-container {
+    display: flex;
+    width: 390px;
+    height: 53px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+ 
+}
+ 
+select {
+    width: 390px;
+    height: 53px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+ 
+.search-container input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+ 
+.search-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+ 
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+ 
+.search-button:hover {
+    background-color: #ddd;
+}
+ 
+/* main mensagen */
+ 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 100px;   
+}
+ 
+.image-container {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+}
+ 
+.image-container .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+ 
+.image-container .rectangle {
+    position: absolute; 
+    top: 50%;
+    left: 45%;
+    width: 90%px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-12%, -12%);
+    border-radius: 10px;
 
+<<<<<<< HEAD
 /* Estilo da imagem */
+=======
+ 
+}
+ 
+.rectangle h2,
+p {
+margin: 50px;
+ 
+}
+ 
+/* mensagem */
+ 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container_mensagem {
+    position: relative;
+    display: flex;
+    width: 1300px;
+    height: 324px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+ 
+/* Estilo da imagem */
+.container_mensagem
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
 .img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
 }
+<<<<<<< HEAD
 
 /* Estilo do texto ao lado da imagem */
 .container_mensagem .texto{
@@ -296,9 +484,63 @@ section {
     background-color: #686868; 
     color: #FFFFFF;
 }
+=======
+ 
+/* Estilo do texto ao lado da imagem */
+ 
+.texto h2 {
+   
+    margin: 10px;
+    margin-top: 30px;
+}
+.texto p {
+    margin-top: 10px;
+ 
+}
+ 
+/* Estilo da mensagem embaixo do container */
+.mensagem {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+ 
+/*container_icones*/
+ 
+.container_iconis {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     margin: 5%;
+}
+.img_1, .img_2{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 10px;
+ 
+}
+ 
+.button_adotar {
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+     margin: 10px;
+     background-color: #686868;
+     color: #FFFFFF;
+}
+.button_adotar p{
+    margin: 10px;  
+}
+ 
+ 
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
 /* ------ */
 /* FOOTER */
-
+ 
 .container-footer {
     position: absolute;
     /* bottom: 0; */
@@ -311,7 +553,7 @@ section {
     color: white;
     margin-top: 50px;
 }
-
+ 
 .texto-footer {
     margin: 10px;
     padding: 10px;
@@ -319,7 +561,7 @@ section {
     display: flex;
     align-items: center;
 }
-
+ 
 .redes-footer {
     margin: 10px;
     padding: 10px;
@@ -327,7 +569,7 @@ section {
     display: flex;
     justify-content: end;
 }
-
+ 
 .redes-footer a {
     background-color: white;
     border-radius: 50%;
@@ -335,6 +577,7 @@ section {
     height: 25px;
     margin: 10px;
 }
+<<<<<<< HEAD
 
 @media (max-width: 880px) {
 
@@ -384,17 +627,27 @@ section {
 
      /* FOOTER */
      .texto-footer {
+=======
+ 
+ 
+@media screen and (max-width : 801px) {
+ 
+    /* ----- */
+    /* FOOTER */
+    .texto-footer {
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
         font-size: 0.8em;
     }
-
-
+ 
+ 
     /* Cookies */
     .div-cookie {
         flex-direction: column;
         height: auto;
     }
-
+ 
 }
+<<<<<<< HEAD
     
 
 /* Responsividade para telas menores que 480px */
@@ -534,3 +787,27 @@ section {
 }
 
 
+=======
+ 
+@media screen and (max-width : 475px) {
+ 
+    /* FOOTER */
+    .texto-footer {
+        font-size: 0.5em;
+    }
+ 
+    .redes-footer a {
+        width: 15px;
+        height: 15px;
+        margin: 20px 5px;
+    }
+ 
+    /* Cookies */
+    .div-cookie {
+        flex-direction: column;
+ 
+        height: auto;
+    }
+ 
+}
+>>>>>>> bb8557cdf989911fd8375443e1d2535c8bf1f6d8
